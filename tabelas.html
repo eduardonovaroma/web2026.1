@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+        * {
+            font-family: Arial, sans-serif;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 2px solid #ddd;
+        }
+
+        th {
+            background-color: #007acc;
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>Trabalhando com Tabelas</h1>
+    <hr>
+
+    <table border="1">
+        <tr>
+            <th>Cabeçalho 1</th>
+            <th>Cabeçalho 2</th>
+        </tr>
+        <tr>
+            <td>Dado 1</td>
+            <td>Dado 2</td>
+        </tr>
+        <tr>
+            <td>Conteúdo 1</td>
+            <td>Conteúdo 2</td>
+        </tr>
+        <tr>
+            <td>Conteúdo 1</td>
+            <td>Conteúdo 2</td>
+        </tr>
+        <tr>
+            <td>Conteúdo 1</td>
+            <td>Conteúdo 2</td>
+        </tr>
+        <tr>
+            <td>Conteúdo 1</td>
+            <td>Conteúdo 2</td>
+        </tr>
+        <tr>
+            <td>Conteúdo 1</td>
+            <td>Conteúdo 2</td>
+        </tr>
+    </table>
+
+    <table border="1">
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Cidade</th>
+            <th>Telefone</th>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>25</td>
+            <td>São Paulo</td>
+            <td>📳 81-3459-2342</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>30</td>
+            <td>Rio de Janeiro</td>
+            <td>📳 81-3459-2342</td>
+        </tr>
+        <tr>
+            <td>Carlos</td>
+            <td>28</td>
+            <td>Belo Horizonte</td>
+            <td>📳 81-2526-2635</td>
+        </tr>
+    </table>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th colspan="4">Pedido de Compra</th>
+            </tr>
+            <tr>
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Preço</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Notebook</td>
+                <td>1</td>
+                <td>R$ 3.000</td>
+                <td>R$ 3.000</td>
+            </tr>
+            <tr>
+                <td>Mouse</td>
+                <td>2</td>
+                <td>R$ 50</td>
+                <td>R$ 100</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total</td>
+                <td>
+                    <b>R$ 3.100</b>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
