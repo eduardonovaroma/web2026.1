@@ -1,0 +1,32 @@
+h1 {
+    color: blue;
+    font-size: 34px;
+}
+
+div {
+    color: red;
+}
+
+#frutas {
+    color: orange;
+    margin-bottom: 40px;
+}
+
+#botoes {
+    margin-bottom: 40px;
+}
+
+.botao {
+    color: white;
+    background-color: blue;
+    padding: 20px;
+    text-align: center;
+}
+
+.botao-vermelho {
+    background-color: red;
+}
+
+.botao-verde {
+    background-color: green;
+}
