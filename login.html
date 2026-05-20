@@ -1,97 +1,32 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Tela de Login</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 600px;
-            margin: 40px auto;
-            padding: 20px;
-        }
-        form {
-            background: #f9f9f9;
-            padding: 30px;
-            border-radius: 8px;
-        }
-        .form-group {
-            margin-bottom: 20px;
-        }
-        label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-        input[type="text"],
-        input[type="email"],
-        input[type="password"],
-        input[type="tel"],
-        input[type="date"],
-        select,
-        textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-        button {
-            background: #007acc;
-            color: white;
-            padding: 12px 30px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        button:hover {
-            background: #005a9c;
-        }
-        .required {
-            color: red;
-        }
-    </style>
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
 
-    <h1>Logar no sistema</h1>
-    <form id="formulario" action="/login" method="post">
-        <div>
-            <label for="email">Email:</label>
-            <input type="email" name="email">
+
+    <div class="container">
+        <div class="login fundo-verde">
+            <h1>Login</h1>
+        </div>
+        <div class="login fundo-azul">
+            <h1>Register</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="login fundo-imagem">
+            <h1>Register</h1>
         </div>
 
-        <div>
-            <label for="senha">Senha:</label>
-            <input type="password" name="senha">
-        </div>
+        <img src="images/cachorro.jpg" alt="">
 
-        <input type="submit" value="Entrar">
-    </form>
+    </div>
 
-
-   <script>
-        const formulario = document.getElementById("formulario")
-        formulario.addEventListener('submit', function(event) {
-            event.preventDefault();
-
-            const dados = new FormData(formulario);
-            const email = dados.get('email');
-            const senha = dados.get('senha');
-
-            // alert(`Email: ${email}\nSenha: ${senha}`);
-
-            // Simulação de validação
-            if (email === 'user@example.com' && senha === 'password') {
-                alert('Login bem-sucedido!');
-            } else {
-                alert('Email ou senha incorretos. Tente novamente.');
-            }
-
-        })
-   </script>
+    
 </body>
 </html>

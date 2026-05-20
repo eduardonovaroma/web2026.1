@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #ddd;
+}
+
+.login {
+    width: 600px;
+    height: 500px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    color: white;
+}
+
+.container {
+    border: 3px dashed red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.fundo-verde {
+    background-color: green;
+}
+.fundo-azul {
+    background-color: blue;
+}
+
+.fundo-imagem {
+    
+    background: 
+        linear-gradient(90deg, rgba(13, 31, 45, .88), rgba(255, 255, 255, 0.1)), 
+        url('../images/cachorro.jpg')
+        center / cover;
+}

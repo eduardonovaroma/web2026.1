@@ -40,11 +40,16 @@
 
         /* Diferentes tipos de sombras */
         .shadow-small {
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: -2px -2px 25px 17px rgba(255,24,57,0.56), -2px -2px 25px 17px rgba(37,6,255,0.56);
         }
 
         .shadow-medium {
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .shadow-medium:hover {
+            box-shadow: 0 10px 32px rgba(17, 0, 247, 0.7);
+            transform: translateY(-5px);
         }
 
         .shadow-large {
@@ -87,6 +92,10 @@
 
         .shadow-spread {
             box-shadow: 0 0 0 10px rgba(102, 126, 234, 0.2);
+        }
+
+        .shadow-novaroma {
+            box-shadow: 10px 5px 20px rgba(10, 95, 0, 0.3);
         }
     </style>
 </head>
@@ -141,6 +150,11 @@
             <h3>Spread</h3>
             <p>0 0 0 10px rgba(102,126,234,0.2)</p>
         </div>
+        <div class="box shadow-novaroma">
+            <h3>Padrão</h3>
+            <p>Shadow padrão</p>
+        </div>
     </div>
+    
 </body>
 </html>
